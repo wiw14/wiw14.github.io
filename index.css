@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 
 body {
@@ -9,6 +10,12 @@ body {
 
 h2{
   padding-left: 10px;
+}
+h3{
+  font-size: 16px;
+}
+p{
+  font-size: 11px;
 }
 
 .header {
