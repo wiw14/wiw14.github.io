@@ -1,3 +1,8 @@
+:root{
+  --PrimaryColour: #3d97cc; /*CYAN*/
+  --PrimaryTextColour: white;
+}
+
 .rowPage{
   display: flex;
 }
@@ -5,46 +10,62 @@
 body{
   margin: 0 !important;
   padding: 0 !important;
+  font-family: Arial;
 }
 
 .columnOne{
   flex:30%;
-  background-color: #EEE;
+  background-color: var(--PrimaryColour);
   height: 100vh;
   position: fixed;
   overflow: hidden;
 }
 .columnTwo{
-  flex:70%;
+  padding-left: 43vh;
   height: 100vh;
+  padding-right: 2vh;
+  padding-top: 2vh;
 }
 
 .positionMenu{
   width: 30vh;
-  margin: 10px;
+  margin: 5vh;
   position: relative;
+}
+
+.Title{
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--PrimaryTextColour);
+  padding-bottom: 8px;
+}
+.SubTitle{
+  font-size: 25px;
+  color: var(--PrimaryTextColour);
+  padding-bottom: 5vh;
 }
 
 .vertical-menu {
   /* width: 300px; */
   position: relative;
-  top:70vh;
+  top:52vh;
+  font-size: 20px;
 }
 
 .vertical-menu a {
-  background-color: #eee;
-  color: black;
+  background-color: var(--PrimaryColour);
+  color: var(--PrimaryTextColour);
   display: block;
-  padding: 12px;
+  padding: 4px;
   text-decoration: none;
   text-align: left;
+  font-weight: normal;
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  text-decoration: underline;
 }
 
 .vertical-menu a.active {
-  background-color: #4CAF50;
-  color: white;
+  font-weight: bold;
 }

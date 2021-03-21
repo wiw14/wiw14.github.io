@@ -2,14 +2,23 @@
 <html>
 <head>
   <link rel="stylesheet" href="index.css">
+  <script>
+      //[CYAN,GREY,GREEN,ORANGE,RED,BLUE,PURPLE,MAGENTA]
+      var colours = ["#3d97cc","#555555","#3dccad","#cc853d","#cc523d","#3d66cc","#8c3dcc","#cc3d8e"];
+      var num = Math.floor(Math.random()*colours.length)+1;
+      // window.alert(colours[num-1]);
+      document.documentElement.style.setProperty('--PrimaryColour', colours[num-1]);
+  </script>
 </head>
 <body>
   <div class=rowPage>
       <div class=columnOne>
         <div class=positionMenu>
         <div class="vertical-menu">
+          <div class=Title> Exploring Computer Science</div>
+          <div class=SubTitle>William Wright</div>
           <a href="#" class="active">Home</a>
-          <a href="DissJournal.html">Dissertation Journal</a>
+          <a href="DissJournalTwo.html">Dissertation Journal</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
           <a href="#">Link 4</a>
