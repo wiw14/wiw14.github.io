@@ -1,61 +1,50 @@
-* {
-  box-sizing: border-box;
-  font-family: Helvetica;
+.rowPage{
+  display: flex;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background:#f5fffd;
+body{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-h2{
-  padding-left: 10px;
+.columnOne{
+  flex:30%;
+  background-color: #EEE;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
-h3{
-  font-size: 16px;
-}
-p{
-  font-size: 11px;
+.columnTwo{
+  flex:70%;
+  height: 100vh;
 }
 
-.header {
-  padding: 20px;
-  text-align: center;
-  background: #1abc9c;
+.positionMenu{
+  width: 30vh;
+  margin: 10px;
+  position: relative;
+}
+
+.vertical-menu {
+  /* width: 300px; */
+  position: relative;
+  top:70vh;
+}
+
+.vertical-menu a {
+  background-color: #eee;
   color: black;
-  font-size: 30px;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: left;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 20%;
-  padding: 0 10px;
+.vertical-menu a:hover {
+  background-color: #ccc;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #d9faf3;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
 }
