@@ -36,3 +36,25 @@
 a:hover{
   opacity: 0.6;
 }
+
+.columnTwoMobile{
+  display:none;
+}
+
+@media only screen and (max-width: 850px) {
+
+.columnTwoMobile{
+  display: block;
+  padding-left: 0px;
+  height: 100vh;
+  padding-right: 0px;
+  padding-top: 0px;
+  width:100%;
+}
+.gridMobile{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  width: 100%;
+}
+}

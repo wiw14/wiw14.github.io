@@ -190,8 +190,180 @@
           <h3> Friday - 19/03/21</h3>
           <p> Started the in-depth testing of the currently implemented approaches ready for the write-up.</p>
         </div>
-
-
       </div>
   </div>
+
+  <ul class="ulMobile">
+    <li class="liMobile"><a class="title" href="index.html">Exploring Computer Science</a></li>
+    <li class="liMobile"><a href="DissJournalTwo.html">Dissertation Journal</a></li>
+    <li class="liMobile"><a href="Photography.html", class="active">Photography</a></li>
+    <li class="liMobile"><a href="Posts.html">Posts</a></li>
+    <li class="liMobile"><a href="About.html">About</a></li>
+  </ul>
+
+  <div class=columnTwoMobile>
+    <div class=post>
+      <h3> Monday - 25/01/21</h3>
+      <p>Started researching the Electric Vehicle Routing Problem (EVRP), I started by reading the supplied documents on the competition to grasp an understanding of the EVRP. </p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 26/01/21</h3>
+      <p>I continued researching the EVRP and started to look at approaches to solve the EVRP; I started with the submissions to the EVRP competition.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 27/01/21</h3>
+      <p>Today I had a meeting with my dissertation supervisor, as well as continued research on EVRP approaches.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 28/01/21</h3>
+      <p>With the guidance from my supervisor I chose two heuristic approaches to do further research and to start developing working approaches.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 29/01/21</h3>
+      <p>Finished the week by doing further research into the approaches I chose.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 01/02/21</h3>
+      <p>I started the week by downloading the sample code supplied by the EVRP competition. Then I set up a github repository for the sample code and benchmark dataset.
+      With the git setup I started to work on a python script to visualise the output of the EVRP sample code.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 02/02/21</h3>
+      <p>I finished developing the visualisation python script, it used matplotlib to plot the Depot, Charging Stations, Customers, and EV Paths.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 03/02/21</h3>
+      <p> Located an example C++ script for ant colonization optimization (ACO) which will act as a working example to base my ACO approach on.
+      I also looked through the given sample code to grasp an understanding of how to develop a working approach. I also attended my weekly meeting where we discussed what to do next.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 04/02/21</h3>
+      <p>To better understand the format of the heuristic needed for the sample code I started by developing two simple heuristics; the first using euclidean distance to determine which customer is next, and the second used Dijkstra algorithm to determine a path between customers.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 05/02/21</h3>
+      <p>Re-organised the sample code so that the heuristic.cpp could call different heuristics. I also continued developing the Euclidean heuristic and Dijkstra heuristic.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 08/02/21</h3>
+      <p> Finished off the Euclidean and Dijkstra heuristic, these both showed marginal improvement upon the random heuristic supplied in the sample code.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 09/02/21</h3>
+      <p> I started implementing the ant colonization optimization algorithm as a heuristic using the example ACO script. The heuristic is currently implemented but doesn't function as intended. I also created my Dissertation Journal to note down my progress.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 10/02/21</h3>
+      <p>Finished off first attempt for ACO heuristic, it currently is underperforming. Had my weekly meeting with my supervisor, for the next week I will work on improving ACO to perform better using heuristic and local search approach.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 11/02/21</h3>
+      <p>Researched local seaches which could be used to impove the performance of the ACO Heuristic; to begin with I chose to focus on excahnge local search</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 12/02/21</h3>
+      <p>To impve the ACO I started by re-writing the algorithm so it used less memory and better utilised the pre-existing methods in the sample code</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 15/02/21</h3>
+      <p>Implemented exchange local search as well as an exchange local search using a pheromone heuristic. Next I looked at 2-Opt local search and implemented it for ACO.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 16/02/21</h3>
+      <p>I started by improving the memory allocation and de-allocation, as well as the tour storage function to function better with the larger problems. I also moved the local searches to a separate class so that they can be used by all the heuristics.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 17/02/21</h3>
+      <p>An issue with the current implemetation is the tour generation which is preventing the algorithms from finding the "global optima". I will revise the function to make a more dynamic approach apposed to the current greedy one.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 18/02/21</h3>
+      <p> Worked on fixing the memory leak in Generate Tour V2, looked over example code for the genetic algorithm.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 19/02/21</h3>
+      <p> Fixed the issues with Generate Tour V2, started on creating Generate Tour V3. Went through and commented ACO, Local Search and KNN class files.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 22/02/21</h3>
+      <p> Over the weekend I finished off the comments, started my genetic algorithm implemetation and implemented Max Min ACO.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 23/02/21</h3>
+      <p> Created an automatic parameterisation framework which located optimal parameter values through exhaustive search.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 24/02/21</h3>
+      <p> Had my dissertation meeting, I also executed the automatic parameterisation framework on the ACO for the first benchmark dataset to locate an optimal set of values.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 25/02/21</h3>
+      <p> I worked on Max Min ACO so that it ran until the algorithm converged opposed to a set number of iterations.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 26/02/21</h3>
+      <p> Researched Genetic Algorithms and the Generalised Partition Crossover operator so that it can be implemented.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 01/03/21</h3>
+      <p> Implemented genetic algorithm using greedy selection, random mutations per generation.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 02/03/21</h3>
+      <p> Started to implement the Partition Crossover Operator, initial implemetation showed low partition success and failed to generate viable routes.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 03/03/21</h3>
+      <p> Had a dissertation meeting where my results from the Partition crossover were discussed and looked at alternatives for crossover operators if the partition crossover operator doesn't perform as intended. Researched the partially mapped crossover operator.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 04/03/21</h3>
+      <p> Completely re-wrote the partition crossover using a simplified method for finding partitions using dynamic data structures, this located partitions with higher success but still underperformed compared to the reference paper.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 05/03/21</h3>
+      <p> I explored an idea I had regarding clustering the customers and passing the clusters into the metaheuristic, I used k-means clustering on the customers then applied ACO to the clusters. I also completely re-structured the project into folders and updated all the comments.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 08/03/21</h3>
+      <p> Implemented the partially mapped crossover operator to compare the results with the partition crossover.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 09/03/21</h3>
+      <p> Ran tests on the newly implemented methods to compare them empirically to the Ant Colony Optimisation implementations. To assist with comparing approaches I added time taken for the heuristic to run.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 10/03/21</h3>
+      <p> Created python script to count the number of lines within the project. Added functions to save individual run performance to a file so that they can be plotted using python.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 11/03/21</h3>
+      <p> Wrote python script to plot the run data for each run in individual graphs. Ran tests with large iterations to reach upper bound values for large datasets.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 12/03/21</h3>
+      <p> Ran further tests to produce individual run data to then plot as graphs to determine where local optimal values are located.</p>
+    </div>
+    <div class=post>
+      <h3> Monday - 15/03/21</h3>
+      <p> I presented my mid project demo to my supervisor to get their feedback on the presentation before presenting it to the second marker, I then ammended the presentation based on their feedback.</p>
+    </div>
+    <div class=post>
+      <h3> Tuesday - 16/03/21</h3>
+      <p> Presented my mid project demo to the second marker, the presentation went well.</p>
+    </div>
+    <div class=post>
+      <h3> Wednesday - 17/03/21</h3>
+      <p> Focusing on finishing up the coding portion of the project I researched Lin Kernighan heuristic in more detail preparing to code the heuristic.</p>
+    </div>
+    <div class=post>
+      <h3> Thursday - 18/03/21</h3>
+      <p> Had my supervisor meeting, I outlined what I wanted to get done in the easter holidays. These included finishing the coding, running extensive tests and starting the write-up for the project.</p>
+    </div>
+    <div class=post>
+      <h3> Friday - 19/03/21</h3>
+      <p> Started the in-depth testing of the currently implemented approaches ready for the write-up.</p>
+    </div>
+  </div>
+
 </body>

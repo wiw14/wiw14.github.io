@@ -3,7 +3,7 @@
   --PrimaryTextColour: white;
 }
 .columnOne{
-  flex:30%;
+  flex:15%;
   background-color: var(--PrimaryColour);
   height: 100vh;
   position: fixed;

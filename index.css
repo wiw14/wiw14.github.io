@@ -70,3 +70,54 @@ body{
 .vertical-menu a.active {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 850px) {
+  .columnOne{
+    display:none;
+}
+.rowPage{
+  display: none;
+}
+
+.vertical-menu {
+  display:none;
+}
+
+.vertical-menu a {
+  display:none;
+}
+
+.columnTwoMobile{
+  display: block;
+  padding-left: 0px;
+  height: 100vh;
+  padding-right: 0px;
+  padding-top: 0px;
+  width:100%;
+}
+
+.ulMobile {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--PrimaryColour);
+}
+
+.liMobile {
+  float: left;
+}
+
+.liMobile a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.liMobile a:hover {
+  color:#DDD;
+}
+
+}
